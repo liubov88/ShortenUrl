@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<body>
+  <main>   
+    <section id="urlForm">
+      <form enctype="application/x-www-form-urlencoded" method="POST" action="/newUrl">
+        Enter URL
+        <input type="url" name="url" />
+        <button type="submit">Submit</button>
+        <p id="urlResultLabel">
+        <p id="urlResult">
+        </p>
+      </form>
+    </section>
+  </main>
+  <script>
+    let allData = window.location.hash;
+    if (allData) {
+      let urlVal = new URL(allData.substr(1));
+      if (urlVal.protocol === window.location.protocol
+        && urlVal.host === window.location.host) {
+        let sectionV = document.getElementById('urlResultLabel');
+        sectionV.innerHTML = `<p>The shortened version:</p>`;
+        let section = document.getElementById('urlResult');       
+        section.innerHTML = `<a id="link" href="${urlVal}">${urlVal}</a>`;
+      }
+    }
+  </script>
+</body>
+</html>

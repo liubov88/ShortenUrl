@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "nk1YO7s0K7vOj3fD8NZHsbv5EusaVuvtzGlZUC+vbQY=",
+  "Source": "ShortUrl",
+  "BasePath": "_content/ShortUrl",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ShortUrl\\wwwroot",
+      "Source": "ShortUrl",
+      "ContentRoot": "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\wwwroot\\",
+      "BasePath": "_content/ShortUrl",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\wwwroot\\index.htm",
+      "SourceId": "ShortUrl",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\wwwroot\\",
+      "BasePath": "_content/ShortUrl",
+      "RelativePath": "index.htm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.htm"
+    }
+  ]
+}
