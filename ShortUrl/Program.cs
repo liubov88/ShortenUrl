@@ -11,7 +11,7 @@ var host = Host.CreateDefaultBuilder(args)
           collection.Upsert(new NewShortLink
           {
             Id = 1,
-            Link = "https://www.google.com/",
+            Link = "https://www.youtube.com/",
           });
           return db;
         });
@@ -36,8 +36,7 @@ static Task HandleUrl(HttpContext context)
   {
     return context.Response.SendFileAsync("wwwroot/index.htm");
   }
-
-  // Default to home page if no matching url.
+  
   var redirect = "/";
 
   var db = context.RequestServices.GetService<ILiteDatabase>();
@@ -55,8 +54,6 @@ static Task HandleUrl(HttpContext context)
   return Task.CompletedTask;
 }
 
-
-
 static Task PutResp(HttpContext context, int status, string response)
 {
   context.Response.StatusCode = status;
@@ -64,12 +61,11 @@ static Task PutResp(HttpContext context, int status, string response)
 }
 
 static Task HandleShortenUrl(HttpContext context)
-{
-  // Retrieve our dependencies
+{  
   var db = context.RequestServices.GetService<ILiteDatabase>();
   var collection = db.GetCollection<NewShortLink>(nameof(NewShortLink));
 
-  // Perform basic form validation
+  // validate
   if (!context.Request.HasFormContentType || !context.Request.Form.ContainsKey("url"))
   {
     return PutResp(context, StatusCodes.Status400BadRequest, "Cannot process request.");
@@ -96,7 +92,6 @@ static Task HandleShortenUrl(HttpContext context)
       };
       collection.Insert(entry);
     }
-
     var urlChunk = entry.GetNewUrl();
     var responseUri = $"{context.Request.Scheme}://{context.Request.Host}/{urlChunk}";
     context.Response.Redirect($"/#{responseUri}");

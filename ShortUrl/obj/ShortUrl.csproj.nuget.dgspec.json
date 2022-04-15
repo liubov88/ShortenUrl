@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\ShortUrl.csproj": {}
+    "D:\\DATA\\SCAI\\study\\rep\\ShortenUrl\\ShortUrl\\ShortUrl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\ShortUrl.csproj": {
+    "D:\\DATA\\SCAI\\study\\rep\\ShortenUrl\\ShortUrl\\ShortUrl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\ShortUrl.csproj",
+        "projectUniqueName": "D:\\DATA\\SCAI\\study\\rep\\ShortenUrl\\ShortUrl\\ShortUrl.csproj",
         "projectName": "ShortUrl",
-        "projectPath": "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\ShortUrl.csproj",
+        "projectPath": "D:\\DATA\\SCAI\\study\\rep\\ShortenUrl\\ShortUrl\\ShortUrl.csproj",
         "packagesPath": "C:\\Users\\39324\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\39324\\Source\\Repos\\ShortUrl\\ShortUrl\\obj\\",
+        "outputPath": "D:\\DATA\\SCAI\\study\\rep\\ShortenUrl\\ShortUrl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
